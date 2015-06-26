@@ -1,0 +1,17 @@
+block('nav')(
+    tag()('ul'),
+
+    content()(function() {
+        return this.ctx.nav.map(function(tab) {
+            return { elem: 'item', content: tab };
+        });
+    }),
+
+    elem('item')(
+        tag()('li'),
+
+        content()(function() {
+            return [ applyNext() ];
+        })
+    )
+);
