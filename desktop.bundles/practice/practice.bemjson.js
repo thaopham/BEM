@@ -47,9 +47,7 @@
                       block : 'button',
                       mods : { theme : 'islands', size : 'm' },
                       text : 'Sign In'
-                  },
-                  { tag : 'br' },
-                  { tag : 'br' }
+                  }
                 ]
               }
             ]
@@ -61,6 +59,29 @@
               block: 'content',
               content: [
                 { tag : 'h2', content : 'islands theme' },
+                { tag : 'br' },
+                { block : 'b-inner', content : 'Inner' },
+                { tag : 'br' },
+                {
+                  block: 'b1',
+                  content: '1234',
+                  js: true
+                },
+                { tag : 'br' },
+                { block: 'b-link', content: 'link without URL' },
+                ' ',
+                { block: 'b-link', url: '//ya.ru', content: 'link with URL' },
+                { tag : 'br' },
+                { tag : 'br' },
+                {
+                  block: 'menu',
+                  content: [
+                    { elem: 'item', content: {block: 'link', url: '#', content: 'aaa', mods : { theme : 'islands', size : 'm'  } } },
+                    { elem: 'item', content: 'bbb' },
+                    { elem: 'item', content: 'ccc' }
+                  ]
+                },
+                { tag : 'br' },
                 { tag : 'br' },
                 {
                     block : 'line',
